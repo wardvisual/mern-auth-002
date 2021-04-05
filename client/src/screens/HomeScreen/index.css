@@ -1,0 +1,65 @@
+.home-screen {
+  height: 100vh;
+
+  display: grid;
+  place-items: center;
+  margin: 0 4rem 0 4rem;
+}
+
+.home-screen .home-screen__content {
+  display: grid;
+  place-items: center;
+  grid-gap: 1rem;
+  text-align: center;
+}
+
+.home-screen .home-screen__content h1 span {
+  color: rgba(1, 166, 255, 0.96);
+  font-size: 9rem;
+  margin-bottom: -3rem;
+}
+
+.home-screen .home-screen__tags {
+  padding: 1rem;
+}
+
+.home-screen .home-screen__tags > b {
+  margin-bottom: -0.7rem;
+}
+
+.home-screen .home-screen__tags div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-gap: 1rem;
+}
+
+.home-screen .home-screen__tags div p {
+  padding: 0.5rem;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.home-screen .home-screen__tags div p:hover {
+  background: rgba(0, 0, 0, 0.12);
+  transition: all 0.3s;
+  color: rgba(1, 166, 255, 0.96);
+}
+
+@media screen and (max-width: 550px) {
+  .home-screen {
+    margin: 0 1rem 0 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .home-screen .home-screen__content h1 span {
+    color: rgba(1, 166, 255, 0.96);
+    font-size: 3rem;
+  }
+  .home-screen .home-screen__content h1 span {
+    margin-bottom: -1rem;
+  }
+}

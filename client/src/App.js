@@ -19,7 +19,7 @@ const App = () => {
         <ProtectedRoute exact path="/products" component={ProductsScreen} />
         <Route
           exact
-          path="/auth/resetpassword/"
+          path="/auth/resetpassword/:resetToken"
           component={ResetPasswordScreen}
         />
         <Route

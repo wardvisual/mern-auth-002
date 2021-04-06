@@ -6,15 +6,12 @@ const sendToken = require("../utils/sendToken");
 const sendEmail = require("../utils/sendEmail");
 
 exports.register = async (req, res, next) => {
-  const { firstName, lastName, email, password, confirmPassword } = req.body;
+  const { firstName, lastName, email, password } = req.body;
   try {
     const userExists = await User.findOne({ email });
 
     if (userExists)
       return res.status(401).json({ message: "Invalid Credentials" });
-
-    if (password !== confirmPassword)
-      return res.status(401).json({ message: "Password does not much" });
 
     const user = await User.create({
       firstName,

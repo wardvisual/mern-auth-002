@@ -7,7 +7,6 @@
 }
 
 .form {
-  height: auto;
   width: 30rem;
   background: rgb(13, 20, 44);
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -18,7 +17,12 @@
   border-radius: 5px;
 
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 0.5rem;
+}
+
+.error {
+  font-size: 12px;
+  color: rgb(245, 74, 74);
 }
 
 .form__button {
@@ -27,17 +31,13 @@
 
 div {
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 0.8rem;
 }
 
 div.column {
-  display: flex;
-  grid-gap: 1rem;
-}
-
-span {
   display: grid;
-  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
 }
 
 button {
@@ -51,5 +51,6 @@ button {
 
   div.column {
     display: grid;
+    grid-template-columns: unset;
   }
 }

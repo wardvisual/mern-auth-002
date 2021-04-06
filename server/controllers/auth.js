@@ -60,7 +60,7 @@ exports.forgotPassword = async (req, res, next) => {
 
     await user.save();
 
-    const resetUrl = `${process.env.HOST}/resetpassword/${resetToken}`;
+    const resetUrl = `${process.env.HOST}/auth/resetpassword/${resetToken}`;
 
     const message = `
       <h1>You have requested a password reset</h1>

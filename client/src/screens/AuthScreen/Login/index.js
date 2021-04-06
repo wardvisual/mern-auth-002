@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useForm } from "react-hook-form";
@@ -24,7 +24,7 @@ const LoginScreen = () => {
     dispatch(authLogin(email, password));
   };
 
-  const { loading, error, success } = userLogin;
+  const { loading, error } = userLogin;
 
   const showActions = () => {
     let msg;

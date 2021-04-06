@@ -5,7 +5,8 @@
   "main": "./server/server.js",
   "scripts": {
     "dev": "nodemon ./server/server",
-    "start": "node ./server/server"
+    "start": "node ./server/server",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "keywords": [],
   "author": "Dev Edward",

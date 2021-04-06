@@ -11,7 +11,7 @@ const ForgotPasswordScreen = () => {
   const userForgotPassword = useSelector((state) => state.userForgotPassword);
   const dispatch = useDispatch();
 
-  const { loading, error, success } = userForgotPassword;
+  const { loading, error } = userForgotPassword;
 
   const {
     register,
